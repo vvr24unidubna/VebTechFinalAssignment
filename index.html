@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NFT Marketplace — Discover Digital Art & Collect NFTs</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="header__logo" href="#">
+        <img class="logo__icon" src="assets/favicon.svg" alt="">
+        NFT Marketplace
+      </a>
+      <nav class="header__nav">
+        <ul class="header__menu" id="menu">
+          <li><a href="#categories">Marketplace</a></li>
+          <li><a href="#creators">Rankings</a></li>
+          <li><a href="#digest">Connect a wallet</a></li>
+        </ul>
+        <button class="button" type="button" data-modal-open><img class="button__icon" src="assets/User.svg" alt="">Sign
+          Up</button>
+      </nav>
+      <button class="header__burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <h1>Discover Digital Art &amp; Collect NFTs</h1>
+          <p>NFT Marketplace UI Created With Anima For Figma. Collect, Buy And Sell Art From More Than 20k NFT
+            Artists.</p>
+          <button class="button" type="button" data-modal-open><img class="button__icon" src="assets/RocketLaunch.svg"
+              alt="">Get Started</button>
+          <ul class="hero__stats">
+            <li><b>240k+</b> <span>Total Sale</span></li>
+            <li><b>100k+</b> <span>Auctions</span></li>
+            <li><b>240k+</b> <span>Artists</span></li>
+          </ul>
+        </div>
+
+        <figure class="hero__card">
+          <img src="assets/space_walking.png" alt="Space Walking — NFT artwork">
+          <figcaption>
+            <p class="hero__card-title">Space Walking</p>
+            <p class="hero__card-author">
+              <img src="assets/Animakid.png" alt="Animakid avatar"> Animakid
+            </p>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+    <section class="trending">
+      <div class="container">
+        <h2>Trending Collection</h2>
+        <p class="section-subtitle">Checkout Our Weekly Updated Trending Collection.</p>
+
+        <ul class="trending__list">
+          <li class="trending__card">
+            <img class="trending__cover" src="assets/DSGN_Animals_1.png" alt="DSGN Animals collection cover">
+            <ul class="trending__thumbs">
+              <li><img src="assets/DSGN_Animals_2.png" alt=""></li>
+              <li><img src="assets/DSGN_Animals_3.png" alt=""></li>
+              <li class="trending__more">1025+</li>
+            </ul>
+            <h3>DSGN Animals</h3>
+            <p class="trending__author"><img src="assets/MrFox.png" alt=""> MrFox</p>
+          </li>
+
+          <li class="trending__card">
+            <img class="trending__cover" src="assets/Magic_Mushrooms_1.png" alt="Magic Mushrooms collection cover">
+            <ul class="trending__thumbs">
+              <li><img src="assets/Magic_Mushrooms_2.png" alt=""></li>
+              <li><img src="assets/Magic_Mushrooms_3.png" alt=""></li>
+              <li class="trending__more">1025+</li>
+            </ul>
+            <h3>Magic Mushrooms</h3>
+            <p class="trending__author"><img src="assets/Shroomie.png" alt=""> Shroomie</p>
+          </li>
+
+          <li class="trending__card">
+            <img class="trending__cover" src="assets/Disco_Machines_1.png" alt="Disco Machines collection cover">
+            <ul class="trending__thumbs">
+              <li><img src="assets/Disco_Machines_2.png" alt=""></li>
+              <li><img src="assets/Disco_Machines_3.png" alt=""></li>
+              <li class="trending__more">1025+</li>
+            </ul>
+            <h3>Disco Machines</h3>
+            <p class="trending__author"><img src="assets/BeKind2Robots.png" alt=""> BeKind2Robots</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="creators">
+      <div class="container">
+        <div class="creators__head">
+          <div>
+            <h2>Top Creators</h2>
+            <p class="section-subtitle">Checkout Top Rated Creators On The NFT Marketplace</p>
+          </div>
+          <button class="button button--outline" type="button"><img class="button__icon"
+              src="assets/RocketLaunchPurple.svg" alt="">View Rankings</button>
+        </div>
+
+        <div class="creators__controls">
+          <button class="creators__arrow" type="button" data-dir="-1" aria-label="Previous creators">←</button>
+          <button class="creators__arrow" type="button" data-dir="1" aria-label="Next creators">→</button>
+        </div>
+
+        <ul class="creators__list" id="creators-list">
+          <li class="creators__card">
+            <span class="creators__num">1</span>
+            <img src="assets/KeepItreal.png" alt="KeepItreal avatar">
+            <h3>KeepItreal</h3>
+            <p>Total Sales: <b>34.53 ETH</b></p>
+          </li>
+          <li class="creators__card">
+            <span class="creators__num">2</span>
+            <img src="assets/DigiLab.png" alt="DigiLab avatar">
+            <h3>DigiLab</h3>
+            <p>Total Sales: <b>34.53 ETH</b></p>
+          </li>
+          <li class="creators__card">
+            <span class="creators__num">3</span>
+            <img src="assets/GravityOne.png" alt="GravityOne avatar">
+            <h3>GravityOne</h3>
+            <p>Total Sales: <b>34.53 ETH</b></p>
+          </li>
+          <li class="creators__card">
+            <span class="creators__num">4</span>
+            <img src="assets/Juanie.png" alt="Juanie avatar">
+            <h3>Juanie</h3>
+            <p>Total Sales: <b>34.53 ETH</b></p>
+          </li>
+          <li class="creators__card">
+            <span class="creators__num">5</span>
+            <img src="assets/BlueWhale.png" alt="BlueWhale avatar">
+            <h3>BlueWhale</h3>
+            <p>Total Sales: <b>34.53 ETH</b></p>
+          </li>
+          <li class="creators__card">
+            <span class="creators__num">6</span>
+            <img src="assets/Mr_Fox.png" alt="Mr Fox avatar">
+            <h3>Mr Fox</h3>
+            <p>Total Sales: <b>34.53 ETH</b></p>
+          </li>
+          <li class="creators__card">
+            <span class="creators__num">7</span>
+            <img src="assets/Shroomie_.png" alt="Shroomie avatar">
+            <h3>Shroomie</h3>
+            <p>Total Sales: <b>34.53 ETH</b></p>
+          </li>
+          <li class="creators__card">
+            <span class="creators__num">8</span>
+            <img src="assets/Robotica.png" alt="Robotica avatar">
+            <h3>Robotica</h3>
+            <p>Total Sales: <b>34.53 ETH</b></p>
+          </li>
+          <li class="creators__card">
+            <span class="creators__num">9</span>
+            <img src="assets/RustyRobot.png" alt="RustyRobot avatar">
+            <h3>RustyRobot</h3>
+            <p>Total Sales: <b>34.53 ETH</b></p>
+          </li>
+          <li class="creators__card">
+            <span class="creators__num">10</span>
+            <img src="assets/Animakid_.png" alt="Animakid avatar">
+            <h3>Animakid</h3>
+            <p>Total Sales: <b>34.53 ETH</b></p>
+          </li>
+          <li class="creators__card">
+            <span class="creators__num">11</span>
+            <img src="assets/Dotgu.png" alt="Dotgu avatar">
+            <h3>Dotgu</h3>
+            <p>Total Sales: <b>34.53 ETH</b></p>
+          </li>
+          <li class="creators__card">
+            <span class="creators__num">12</span>
+            <img src="assets/Ghiblier.png" alt="Ghiblier avatar">
+            <h3>Ghiblier</h3>
+            <p>Total Sales: <b>34.53 ETH</b></p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="categories" id="categories">
+      <div class="container">
+        <h2>Browse Categories</h2>
+        <ul class="categories__list">
+          <li class="categories__card categories__card--art">
+            <svg class="categories__icon" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.8125 84.375H35.9375C39.9549 84.375 43.8821 83.1837 47.2225 80.9517C50.5629 78.7198 53.1664 75.5474 54.7038 71.8358C56.2412 68.1241 56.6435 64.04 55.8597 60.0997C55.0759 56.1595 53.1414 52.5402 50.3006 49.6994C47.4598 46.8586 43.8405 44.9241 39.9003 44.1403C35.96 43.3565 31.8759 43.7588 28.1642 45.2962C24.4526 46.8336 21.2802 49.4371 19.0483 52.7775C16.8163 56.1179 15.625 60.0451 15.625 64.0625C15.625 78.125 7.8125 84.375 7.8125 84.375Z"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M43.9053 45.3906C51.4053 35.2734 70.4678 12.1094 87.8896 12.1094C87.8896 29.5312 64.7256 48.5938 54.6084 56.0938"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M51.9531 35.3906C57.246 38.3777 61.6223 42.754 64.6094 48.0469" stroke="white" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h3>Art</h3>
+          </li>
+          <li class="categories__card categories__card--collectibles"><svg class="categories__icon"
+              viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M14.3355 67.5784L23.7887 14.0237C23.8547 13.6195 24.0006 13.2325 24.2178 12.8853C24.4349 12.538 24.719 12.2375 25.0535 12.0011C25.388 11.7648 25.7662 11.5974 26.166 11.5087C26.5659 11.4201 26.9794 11.4119 27.3824 11.4846L48.9449 15.2737C49.7596 15.426 50.482 15.8919 50.9568 16.5713C51.4316 17.2506 51.6209 18.0891 51.484 18.9065L41.9918 72.7737C41.3417 76.4009 39.2977 79.6295 36.2972 81.7685C33.2966 83.9076 29.578 84.7872 25.9371 84.219C18.1637 82.969 12.9684 75.3518 14.3355 67.5784Z"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M46.21 48.7501L74.6865 38.3985C75.0737 38.2556 75.4853 38.1907 75.8977 38.2077C76.31 38.2247 76.7149 38.3232 77.089 38.4976C77.4631 38.6719 77.7989 38.9186 78.0771 39.2234C78.3553 39.5282 78.5704 39.8851 78.71 40.2735L86.21 60.8204C86.4866 61.5976 86.4447 62.4526 86.0935 63.199C85.7422 63.9454 85.1101 64.5226 84.335 64.8048L32.9287 83.5157"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M85.9375 63.4766V81.25C85.9375 82.0788 85.6083 82.8737 85.0222 83.4597C84.4362 84.0458 83.6413 84.375 82.8125 84.375H28.125"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M28.125 75C30.7138 75 32.8125 72.9013 32.8125 70.3125C32.8125 67.7237 30.7138 65.625 28.125 65.625C25.5362 65.625 23.4375 67.7237 23.4375 70.3125C23.4375 72.9013 25.5362 75 28.125 75Z"
+                fill="white" />
+            </svg>
+            <h3>Collectibles</h3>
+          </li>
+          <li class="categories__card categories__card--music"><svg class="categories__icon" viewBox="0 0 100 100"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M70.3125 78.125C76.3531 78.125 81.25 73.2281 81.25 67.1875C81.25 61.1469 76.3531 56.25 70.3125 56.25C64.2719 56.25 59.375 61.1469 59.375 67.1875C59.375 73.2281 64.2719 78.125 70.3125 78.125Z"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M20.3125 90.625C26.3531 90.625 31.25 85.7281 31.25 79.6875C31.25 73.6469 26.3531 68.75 20.3125 68.75C14.2719 68.75 9.375 73.6469 9.375 79.6875C9.375 85.7281 14.2719 90.625 20.3125 90.625Z"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M81.25 31.25L31.25 43.75" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M31.25 79.6875V25L81.25 12.5V67.1875" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <h3>Music</h3>
+          </li>
+          <li class="categories__card categories__card--photography"><svg class="categories__icon" viewBox="0 0 100 100"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M81.25 81.25H18.75C17.0924 81.25 15.5027 80.5915 14.3306 79.4194C13.1585 78.2473 12.5 76.6576 12.5 75V31.25C12.5 29.5924 13.1585 28.0027 14.3306 26.8306C15.5027 25.6585 17.0924 25 18.75 25H31.25L37.5 15.625H62.5L68.75 25H81.25C82.9076 25 84.4973 25.6585 85.6694 26.8306C86.8415 28.0027 87.5 29.5924 87.5 31.25V75C87.5 76.6576 86.8415 78.2473 85.6694 79.4194C84.4973 80.5915 82.9076 81.25 81.25 81.25Z"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M50 65.625C57.7665 65.625 64.0625 59.329 64.0625 51.5625C64.0625 43.796 57.7665 37.5 50 37.5C42.2335 37.5 35.9375 43.796 35.9375 51.5625C35.9375 59.329 42.2335 65.625 50 65.625Z"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h3>Photography</h3>
+          </li>
+          <li class="categories__card categories__card--video"><svg class="categories__icon" viewBox="0 0 100 100"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M9.375 23.4375H59.375C62.6902 23.4375 65.8696 24.7545 68.2138 27.0987C70.558 29.4429 71.875 32.6223 71.875 35.9375V73.4375C71.875 74.2663 71.5458 75.0612 70.9597 75.6472C70.3737 76.2333 69.5788 76.5625 68.75 76.5625H18.75C15.4348 76.5625 12.2554 75.2455 9.91117 72.9013C7.56696 70.5571 6.25 67.3777 6.25 64.0625V26.5625C6.25 25.7337 6.57924 24.9388 7.16529 24.3528C7.75134 23.7667 8.5462 23.4375 9.375 23.4375V23.4375Z"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M71.875 43.75L93.75 31.25V68.75L71.875 56.25" stroke="white" stroke-width="3"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h3>Video</h3>
+          </li>
+          <li class="categories__card categories__card--utility"><svg class="categories__icon" viewBox="0 0 100 100"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M84.375 50V68.75" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M75 59.375H93.75" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M32.8125 15.625V31.25" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M25 23.4375H40.625" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M65.625 71.875V84.375" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path d="M59.375 78.125H71.875" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+              <path
+                d="M72.8218 14.6987L14.7341 72.7864C13.5137 74.0068 13.5137 75.9854 14.7341 77.2058L22.8134 85.285C24.0338 86.5054 26.0124 86.5054 27.2328 85.285L85.3205 27.1973C86.5409 25.9769 86.5409 23.9983 85.3205 22.7779L77.2413 14.6987C76.0209 13.4783 74.0422 13.4783 72.8218 14.6987Z"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M56.25 31.25L68.75 43.75" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+            <h3>Utility</h3>
+          </li>
+          <li class="categories__card categories__card--sport"><svg class="categories__icon" viewBox="0 0 100 100"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M50 87.5C70.7107 87.5 87.5 70.7107 87.5 50C87.5 29.2893 70.7107 12.5 50 12.5C29.2893 12.5 12.5 29.2893 12.5 50C12.5 70.7107 29.2893 87.5 50 87.5Z"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M23.4375 23.5176C30.449 30.5474 34.383 40.0732 34.375 50.002C34.383 59.9307 30.449 69.4565 23.4375 76.4863"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M76.5642 23.5176C69.5608 30.5526 65.6289 40.0752 65.6289 50.002C65.6289 59.9287 69.5608 69.4513 76.5642 76.4863"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M12.5 50H87.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path d="M50 12.5V87.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h3>Sport</h3>
+          </li>
+          <li class="categories__card categories__card--worlds"><svg class="categories__icon" viewBox="0 0 100 100"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M50 84.375C68.9848 84.375 84.375 68.9848 84.375 50C84.375 31.0152 68.9848 15.625 50 15.625C31.0152 15.625 15.625 31.0152 15.625 50C15.625 68.9848 31.0152 84.375 50 84.375Z"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M71.9529 23.5547C82.7732 20.586 90.8982 20.8594 93.3201 25C97.617 32.461 81.7186 49.7266 57.8123 63.5157C33.9061 77.3047 11.0154 82.461 6.6795 75C4.29669 70.8594 8.12481 63.6719 16.0936 55.7813"
+                stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <h3>Virtual Worlds</h3>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="discover">
+      <div class="container">
+        <div class="discover__head">
+          <div>
+            <h2>Discover More NFTs</h2>
+            <p class="section-subtitle">Explore New Trending NFTs</p>
+          </div>
+          <button class="button button--outline" type="button"><img class="button__icon" src="assets/Eye.svg" alt="">See
+            All</button>
+        </div>
+
+        <ul class="discover__list">
+          <li class="discover__card">
+            <img src="assets/Distant_Galaxy.png" alt="Distant Galaxy NFT artwork">
+            <h3>Distant Galaxy</h3>
+            <p class="discover__author"><img src="assets/MoonDancer.png" alt=""> MoonDancer</p>
+            <p class="discover__price">
+              <span><span class="price-label">Price</span><b>1.63 ETH</b></span>
+              <span><span class="price-label">Highest Bid</span><b>0.33 wETH</b></span>
+            </p>
+          </li>
+          <li class="discover__card">
+            <img src="assets/Life_On_Edena.png" alt="Life On Edena NFT artwork">
+            <h3>Life On Edena</h3>
+            <p class="discover__author"><img src="assets/NebulaKid.png" alt=""> NebulaKid Ld</p>
+            <p class="discover__price">
+              <span><span class="price-label">Price</span><b>1.63 ETH</b></span>
+              <span><span class="price-label">Highest Bid</span><b>0.33 wETH</b></span>
+            </p>
+          </li>
+          <li class="discover__card">
+            <img src="assets/AstroFiction.png" alt="AstroFiction NFT artwork">
+            <h3>AstroFiction</h3>
+            <p class="discover__author"><img src="assets/Spaceone.png" alt=""> Spaceone</p>
+            <p class="discover__price">
+              <span><span class="price-label">Price</span><b>1.63 ETH</b></span>
+              <span><span class="price-label">Highest Bid</span><b>0.33 wETH</b></span>
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section class="banner">
+      <div class="container banner__inner">
+        <div class="banner__content">
+          <p class="banner__badge">
+            <img src="assets/Shroomie.png" alt=""> Shroomie
+          </p>
+          <h2>Magic Mashrooms</h2>
+          <button class="button button--white" type="button"><img class="button__icon" src="assets/Eye.svg" alt="">See
+            NFT</button>
+        </div>
+
+        <div class="banner__timer">
+          <p class="banner__timer-title">Auction ends in</p>
+          <p class="banner__time">59 : 59 : 59</p>
+          <p class="banner__labels">
+            <span>Hours</span><span>Minutes</span><span>Seconds</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="how">
+      <div class="container">
+        <h2>How It Works</h2>
+        <p class="section-subtitle">Find Out How To Get Started</p>
+
+        <ul class="how__list">
+          <li class="how__card">
+            <div class="how__icon"><img src="assets/how-1.png" alt=""></div>
+            <h3>Setup Your Wallet</h3>
+            <p>Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right
+              corner.</p>
+          </li>
+          <li class="how__card">
+            <div class="how__icon"><img src="assets/how-2.png" alt=""></div>
+            <h3>Create Collection</h3>
+            <p>Upload your work and setup your collection. Add a description, social links and floor price.</p>
+          </li>
+          <li class="how__card">
+            <div class="how__icon"><img src="assets/how-3.png" alt=""></div>
+            <h3>Start Earning</h3>
+            <p>Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others.
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="digest">
+      <div class="container">
+        <div class="digest__card">
+          <img src="assets/Join_Digest.png" alt="Astronaut reading a newspaper">
+          <div class="digest__content">
+            <h2>Join Our Weekly Digest</h2>
+            <p>Get Exclusive Promotions &amp; Updates Straight To Your Inbox.</p>
+            <form class="digest__form">
+              <input type="email" placeholder="Enter your email here" aria-label="Email" required>
+              <button class="button" type="submit">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__about">
+        <a class="footer__logo" href="#">
+          <img class="logo__icon" src="assets/favicon.svg" alt="">
+          NFT Marketplace
+        </a>
+        <p>NFT marketplace UI created with Anima for Figma.</p>
+        <p>Join our community!</p>
+        <ul class="footer__social">
+          <li><a href="#" aria-label="Discord"><img src="assets/social-1.svg" alt=""></a></li>
+          <li><a href="#" aria-label="Twitter"><img src="assets/social-2.svg" alt=""></a></li>
+          <li><a href="#" aria-label="YouTube"><img src="assets/social-3.svg" alt=""></a></li>
+          <li><a href="#" aria-label="Instagram"><img src="assets/social-4.svg" alt=""></a></li>
+        </ul>
+      </div>
+
+      <nav class="footer__nav">
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="#categories">Marketplace</a></li>
+          <li><a href="#creators">Rankings</a></li>
+          <li><a href="#">Connect a wallet</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__digest">
+        <h3>Join Our Weekly Digest</h3>
+        <p>Get exclusive promotions &amp; updates straight to your inbox.</p>
+        <form class="digest__form">
+          <input type="email" placeholder="Enter your email here" aria-label="Email" required>
+          <button class="button" type="submit">Subscribe</button>
+        </form>
+      </div>
+    </div>
+    <p class="footer__copy container">© NFT Market. Use this template freely.</p>
+  </footer>
+  <div class="modal" id="modal">
+    <div class="modal__overlay" data-modal-close></div>
+    <div class="modal__window" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal__close" type="button" data-modal-close aria-label="Close window">&times;</button>
+      <h2 id="modal-title">Create Account</h2>
+      <form id="modal-form">
+        <label>Username <input type="text" name="username" required></label>
+        <label>Email <input type="email" name="email" required></label>
+        <label>Password <input type="password" name="password" required></label>
+        <button class="button" type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
